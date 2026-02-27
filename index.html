@@ -284,6 +284,7 @@
       }
 
       .page {
+        width: 100%;
         max-width: none;
         margin: 0;
         border: 0;
@@ -299,7 +300,12 @@
       }
 
       .header-top {
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
+      }
+
+      .header-panel[dir="rtl"] {
+        text-align: right;
       }
 
       .header-name {
@@ -327,6 +333,7 @@
       }
 
       .row {
+        grid-template-columns: 1fr 1fr;
         gap: 6px;
         break-inside: avoid;
         page-break-inside: avoid;
